@@ -1,162 +1,181 @@
+
 <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
+<html lang="en">
+<head>
+<!-- Meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="Anil z" name="author">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- SITE TITLE -->
+<title>Login</title>
+
+<!-- Animation CSS -->
+<link rel="stylesheet" href="assets/css/animate.css">	
+<!-- Latest Bootstrap min CSS -->
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<!-- Icon Font -->
+<link href="assets/css/ico-moon.css" rel="stylesheet">
+<!-- Icon Font CSS -->
+<link rel="stylesheet" href="assets/css/ionicons.min.css">
+<link rel="stylesheet" href="assets/css/themify-icons.css">
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="assets/css/all.min.css">
+<!--- owl carousel CSS-->
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+<!-- Magnific Popup CSS -->
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<!-- Style CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" id="layoutstyle" href="assets/color/theme.css">
+
+</head>
+
 <body>
+<!-- START 404 SECTION -->
+<section class="login_register_wrap">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-12">
+            	<div class="lr_form text-center">
+                    <div class="heading_s3 heading_uppercase animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                        <h4 style="color:#6f6a6a;">Login</h4>
+                    </div>
+                    
+                    <div class="different_login animation" data-animation="fadeInUp" data-animation-delay="0.7s">
+                        <span> <i class="ion-android-person" style="
+                            font-size:30px;color:#0e93d8;"></i></span>
+                    </div>
+                    <form method="post" id="login_form" action="dashboard.html" class="login animation" data-animation="fadeInUp" data-animation-delay="0.8s">
+                        
+                        <div class="form-group">
+                            <input type="email" required="" class="form-control" name="email" placeholder="Enter The Email *" >
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" required="" type="password" name="password" Placeholder="Enter The  Password *">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-default btn-block" name="login">Log in</button>
+                        </div>
+                        <!-- <div class="login_footer">
+                            <a href="#">Forgot password?</a>
+                            <label for="rememberme">
+                                <input name="rememberme" type="checkbox" value="forever"> <span>Remember me</span>
+                            </label>
+                        </div> -->
+                        
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END 404 SECTION -->
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>BR</b> Architects</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
-</div>
+<!-- Latest jQuery --> 
+<script src="assets/js/jquery-1.12.4.min.js"></script> 
+<script>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
-  </div>
-</header>
+(function ($) {
 
-<!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+    (function ($) {
+        $.fn.serializeFormJSON = function () {
 
-  <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
-  </div>
+            var o = {};
+            var a = this.serializeArray();
+            $.each(a, function () {
+                if (o[this.name]) {
+                    if (!o[this.name].push) {
+                        o[this.name] = [o[this.name]];
+                    }
+                    o[this.name].push(this.value || '');
+                } else {
+                    o[this.name] = this.value || '';
+                }
+            });
+            return o;
+        };
+    })(jQuery);
 
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-  </div>
+        function processForm(e) {
+            
+            console.log( $(this).serializeFormJSON() )
+          $.ajax({
+            url: "http://localhost:5000/user/login",
+            dataType: "json",
+            type: "post",
+            crossDomain: true,
+            headers: {
+                        "Content-Type": "application/json"
+                    },
+            data: JSON.stringify($(this).serializeFormJSON()),
+            success: function (data, textStatus, jQxhr) {
+                // if success,
+                // store id in localStorage, redirect to dashboard
+                // else pop up error.
+              console.log(typeof(data));
+              console.log(data)
+              if(data === {})
+              {console.log('empty')}
+              console.log(JSON.stringify(data));
+              $("#local").html(JSON.stringify(data) );
+              $("#response pre").html(data);
+              if (typeof(Storage) !== "undefined") {
+                // Code for localStorage/sessionStorage.
+                localStorage.setItem("login", "done");
+                localStorage.setItem("data", JSON.stringify(data));
+                location.href = 'dashboard.html';
+                } else {
+                // Sorry! No Web Storage support..
+                }
+            },
+            error: function (jqXhr, textStatus, errorThrown) {
+              console.log(errorThrown);
+            },
+          });
 
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/w3images/house3.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-  </div>
+          e.preventDefault();
+        }
 
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
-
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-      <h3>John Doe</h3>
-      <p class="w3-opacity">CEO & Founder</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <h3>Jane Doe</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-      <h3>Mike Ross</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-      <h3>Dan Star</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch and talk about your next project.</p>
-    <form action="/action_page.php" target="_blank">
-      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-      <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form>
-  </div>
-  
-<!-- Image of location/map -->
-<div class="w3-container">
-  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-</div>
-
-<!-- End page content -->
-</div>
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+        // once submitted, 
+        // push to API
+        $("#login_form").submit(processForm);
+      })(jQuery);
+    
+</script>
+<!-- jquery-ui --> 
+<script src="assets/js/jquery-ui.js"></script>
+<!-- popper min js --> 
+<script src="assets/js/popper.min.js"></script>
+<!-- Latest compiled and minified Bootstrap --> 
+<script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+<!-- owl-carousel min js  --> 
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script> 
+<!-- magnific-popup min js  --> 
+<script src="assets/js/magnific-popup.min.js"></script> 
+<!-- waypoints min js  --> 
+<script src="assets/js/waypoints.min.js"></script> 
+<!-- parallax js  --> 
+<script src="assets/js/parallax.js"></script> 
+<!-- countdown js  --> 
+<script src="assets/js/jquery.countdown.min.js"></script> 
+<!-- fit video  -->
+<script src="assets/js/jquery.fitvids.js"></script>
+<!-- jquery.counterup.min js --> 
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!-- isotope min js --> 
+<script src="assets/js/isotope.min.js"></script>
+<!-- elevatezoom js -->
+<script src='assets/js/jquery.elevatezoom.js'></script> 
+<!-- scripts js --> 
+<script src="assets/js/scripts.js"></script>
 
 </body>
 </html>
