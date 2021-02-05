@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,175 +6,576 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="Anil z" name="author">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- SITE TITLE -->
-<title>Login</title>
-
-<!-- Animation CSS -->
-<link rel="stylesheet" href="assets/css/animate.css">	
 <!-- Latest Bootstrap min CSS -->
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-<!-- Icon Font -->
-<link href="assets/css/ico-moon.css" rel="stylesheet">
 <!-- Icon Font CSS -->
 <link rel="stylesheet" href="assets/css/ionicons.min.css">
-<link rel="stylesheet" href="assets/css/themify-icons.css">
-<!-- FontAwesome CSS -->
-<link rel="stylesheet" href="assets/css/all.min.css">
 <!--- owl carousel CSS-->
 <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
 <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
 <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
-<!-- Magnific Popup CSS -->
-<link rel="stylesheet" href="assets/css/magnific-popup.css">
 <!-- Style CSS -->
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/responsive.css">
-<link rel="stylesheet" id="layoutstyle" href="assets/color/theme.css">
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 </head>
 
-<body>
-<!-- START 404 SECTION -->
-<section class="login_register_wrap">
-	<div class="container">
-    	<div class="row">
-        	<div class="col-12">
-            	<div class="lr_form text-center">
-                    <div class="heading_s3 heading_uppercase animation" data-animation="fadeInUp" data-animation-delay="0.4s">
-                        <h4 style="color:#6f6a6a;">Login</h4>
+<body data-spy="scroll" data-target=".navbar-nav" data-offset="110">
+<!-- START HEADER -->
+<header class="header_wrap" style="background: #000;">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg"> 
+    	<a class="navbar-brand page-scroll" href="index.html">
+        	<img src="assets/images/asylum_logo.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="ion-android-menu"></span> </button>
+      	<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link active page-scroll text-white" href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a class="nav-link page-scroll text-white" href="classes.html">CLASSES</a>
+                </li>
+                <li>
+                    <a class="nav-link page-scroll text-white" href="memberships.html">MEMBERSHIP</a>
+                </li>
+                <li>
+                    <a class="nav-link page-scroll text-white" href="trainers.html">TRAINERS</a>
+                </li>
+                <li>
+                    <a class="nav-link page-scroll text-white" href="facilities.html">FACILITY</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </div>
+</header>
+<!-- START HEADER --> 
+<!-- START SECTION BANNER -->
+<section class="banner_section p-0">
+    <div id="carouselExampleControls" class="banner_content_wrap carousel slide slide_height_700" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active background_bg" data-img-src="assets/images/slider1.jpeg" style="background: url('assets/images/slider1.jpg')center center / cover;">
+                <div class="banner_slide_content">
+
+                    <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-12 col-sm-12 text-center">
+                            <div class="banner_content2 text_white" style="position: relative;top:-111px;">
+                                <h2 style="font-size:45px;">Seek your strength ... <br> It's in there somewhere !</h2>
+                               
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="different_login animation" data-animation="fadeInUp" data-animation-delay="0.7s">
-                        <span> <i class="ion-android-person" style="
-                            font-size:30px;color:#0e93d8;"></i></span>
-                    </div>
-                    <form method="post" id="login_form" action="dashboard.html" class="login animation" data-animation="fadeInUp" data-animation-delay="0.8s">
-                        
-                        <div class="form-group">
-                            <input type="email" required="" class="form-control" name="email" placeholder="Enter The Email *" >
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" required="" type="password" name="password" Placeholder="Enter The  Password *">
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-default btn-block" name="login">Log in</button>
-                        </div>
-                        <!-- <div class="login_footer">
-                            <a href="#">Forgot password?</a>
-                            <label for="rememberme">
-                                <input name="rememberme" type="checkbox" value="forever"> <span>Remember me</span>
-                            </label>
-                        </div> -->
-                        
-                    </form>
                 </div>
+
+                </div>
+            </div>
+           <div class="carousel-item background_bg"  style="background: url('assets/images/slider3.jpg')center center / cover;">
+                <div class="banner_slide_content">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-12 col-sm-12 text-center">
+                                <div class="banner_content2 text_white" style="position: relative;top:-111px;">
+                                    <h2 style="font-size:45px;">Seek your strength ... <br> It's in there somewhere !</h2>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item background_bg" style="background: url('assets/images/slider1.jpg')center center / cover;">
+                <div class="banner_slide_content">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-12 col-sm-12 text-center">
+                                <div class="banner_content2 text_white" style="position: relative;top:-111px;">
+                                    <h2 style="font-size:45px;">Seek your strength ... <br> It's in there somewhere !</h2>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <ol class="carousel-indicators indicators_style5 m-0">
+            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+        </ol>
+
+    </div>
+</section>
+
+<section style="background: url('assets/images/Background.jpg')center center / cover;">
+	<div class="container">
+        <div class="slidercontainer slider_display">  
+            <div class="showSlide"> 
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mb-lg-5 mb-3 text-center">
+                        <div class="icon_box icon_box_style_1">
+                            <div class="box_icon mb-3">	
+                               <img src="assets/images/all_in_one.png" style="max-width:100px;">
+                            </div>
+                            <div class="icon_box_content">
+                                <h5 style="font-weight:700;color:#da0a0a;">All-in-one</h5>
+                                <p style="color:#000;font-weight:700;">We are the only facility that provides Crossfit, Obstacle Course Race (OCR), and HIIT classes in the same place.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-lg-5 mb-3 text-center">
+                        <div class="icon_box icon_box_style_1">
+                            <div class="box_icon mb-3">	
+                                <img src="assets/images/location.png" style="max-width:74px;">
+                            </div>
+                            <div class="icon_box_content">
+                                <h5 style="font-weight:700;color:#da0a0a;">Different Locations</h5>
+                                <p style="color:#000;font-weight:700;">We conduct the majority of our training in open-air, either on-site or in stunning locations across Ras Al Khaimah
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-lg-5 mb-3 text-center">
+                        <div class="icon_box icon_box_style_1">
+                            <div class="box_icon mb-3">	
+                                <div class="box_icon mb-3">	
+                                    <img src="assets/images/special_classes.png" style="max-width:74px;">
+                                </div>
+                            </div>
+                            <div class="icon_box_content">
+                                <h5 style="font-weight:700;color:#da0a0a;">special classes</h5>
+                                <p style="color:#000;font-weight:700;">There are specialized classes for different people who got different fitness goals.</p>
+                            </div>
+                         </div>
+                    </div>
+        
+    
+                </div>  
+            </div>  
+            <div class="showSlide"> 
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mb-lg-5 mb-3 text-center">
+                        <div class="icon_box icon_box_style_1">
+                            <div class="box_icon mb-3">	
+                               <img src="assets/images/all_in_one.png" style="max-width:100px;">
+                            </div>
+                            <div class="icon_box_content">
+                                <h5 style="font-weight:700;color:#da0a0a;">OCR Training </h5>
+                                <p style="color:#000;font-weight:700;">We are the only OCR facility in the entire Ras Al Khaimah.                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-lg-5 mb-3 text-center">
+                        <div class="icon_box icon_box_style_1">
+                            <div class="box_icon mb-3">	
+                               <img src="assets/images/all_in_one.png" style="max-width:100px;">
+                            </div>
+                            <div class="icon_box_content">
+                                <h5 style="font-weight:700;color:#da0a0a;">Ladies Classes</h5>
+                                <p style="color:#000;font-weight:700;">We have ladies-only classes where ladies can workout together in a space that is exclusively built for them!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div> 
+            <!-- Navigation arrows -->  
+           <img src="assets/images/left_arrow.png" style="max-width:100px;" class="left" onclick="nextSlide(-1)"> 
+            <img src="assets/images/right_arrow.png" style="max-width:100px;" class="right" onclick="nextSlide(1)">
+            
+            
+            <div class="row  justify-content-center align-items-center">
+                <div class="col-md-4 text-center">
+                   <a href="#"> <img src="assets/images/button5.png"> </a>
+                </div>
+            </div>
+        </div>  
+      
+
+
+        <script type="text/javascript">  
+            var slide_index = 1;  
+            displaySlides(slide_index);  
+      
+            function nextSlide(n) {  
+                displaySlides(slide_index += n);  
+            }  
+      
+            function currentSlide(n) {  
+                displaySlides(slide_index = n);  
+            }  
+      
+            function displaySlides(n) {  
+                var i;  
+                var slides = document.getElementsByClassName("showSlide");  
+                if (n > slides.length) { slide_index = 1 }  
+                if (n < 1) { slide_index = slides.length }  
+                for (i = 0; i < slides.length; i++) {  
+                    slides[i].style.display = "none";  
+                }  
+                slides[slide_index - 1].style.display = "block";  
+            }  
+        </script> 
+        <div class="container slider_display_mob ">
+            <div class="row mb-md-5 mb-3">
+                <div class="col-md-12">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 text-center">
+                            <div class="testimonial_slider carousel_slide3 owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true">
+                                <div class="item">
+                        <div class="testimonial_box">
+                            <div class="testimonial_img">
+                                <img class="rounded-circle m-auto" src="assets/images/all_in_one.png" style="max-width:100px;" alt="user"/>
+                            </div>
+                            <div class="icon_box_content">
+                                <h5 style="font-weight:700;color:#da0a0a;">All-in-one</h5>
+                                <p style="color:#000;font-weight:700;">We are the only facility that provides Crossfit, Obstacle Course Race (OCR), and HIIT classes in the same place.</p>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="item">
+                                    <div>
+                                        <div class="testimonial_img">
+                                            <img class="rounded-circle m-auto" src="assets/images/location.png" style="max-width:100px;" alt="user"/>
+                                        </div>
+                                        <div class="icon_box_content">
+                                            <h5 style="font-weight:700;color:#da0a0a;">Different Locations</h5>
+                                            <p style="color:#000;font-weight:700;">We conduct the majority of our training in open-air, either on-site or in stunning locations across Ras Al Khaimah
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="testimonial_box">
+                                        <div class="testimonial_img">
+                                            <img class="rounded-circle m-auto" src="assets/images/special_classes.png" style="max-width:100px;"alt="user"/>
+                                        </div>
+                                        <div class="icon_box_content">
+                                            <h5 style="font-weight:700;color:#da0a0a;">special classes</h5>
+                                            <p style="color:#000;font-weight:700;">There are specialized classes for different people who got different fitness goals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="testimonial_box">
+                                        <div>
+                                            <img class="rounded-circle m-auto" src="assets/images/all_in_one.png"style="max-width:100px;" alt="user"/>
+                                        </div>
+                                        <div class="icon_box_content">
+                                            <h5 style="font-weight:700;color:#da0a0a;">OCR Training </h5>
+                                            <p style="color:#000;font-weight:700;">We are the only OCR facility in the entire Ras Al Khaimah.                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+ 
+    <div class="container-fluid" style="padding-top:68px;">
+        <div class="row justify-content-center" style="background-image: url('assets/images/main_line.png');background-size: cover;/* padding: 5px; */">
+            <div class="col-lg-12 col-md-12 text-center">
+                <h2 style="color:#fff;font-weight: 600;padding:19px;" class="tex-center">ABOUT US</h2>
+            </div>
+      </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <p style="color: #191818;font-weight: 600;padding-top:68px;">In a life packed with challenges, we believe in seeking strength in the deepest dormant parts of ourselves to overcome
+                    any obstacle. We believe every person is equipped with what it takes to achieve their ultimate potential; mind and body <br>
+                    - that's all you need! </p>
+                    <p style="color: #da1010;font-weight: 600;">And this is how Asylum came about..</p>
+                    <p style="color: #191818;font-weight: 600;">Asylum is the first OCR facility in Ras Al Khaimah, curated in a 6,000 square feet warehouse. It was established as a
+                        sanctuary for strength seekers to harbor the competitive, the hesitant, the fit and those who are just simply looking to
+                        have fun or be part of our active community.
+                        </p>
+                        <p  style="color: #191818;font-weight: 600;">Whether it is your first time doing an obstacle course race or want to beat your personal best or even compete, we will
+                            coach you physically and mentally to unlock your true potential.
+                            </p>               
+            </div>
+      </div>
+      <div class="row  justify-content-center align-items-center" style="padding-top:40px;">
+        <div class="col-md-4 col-sm-6 mb-md-0 mb-3 text-center">
+           <a href="facilities.html"> <img src="assets/images/button4.png" style="max-width: 300px;"> </a>
+            </div>
+    </div>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center" style="padding-top:68px;">
+            <div class="col-md-6 col-sm-12 text-center animation animated fadeInRight" data-animation="fadeInRight" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
+                <div class="heading_s3 mb-md-3 text-center" style="padding-bottom:40px;"> 
+                    <h2 style="font-size:40px;">"Dont Limit <br> <span style="color:#da1010;"> your challenges,</span></h2>
+                  </div>
+                  <div class="heading_s3 mb-md-3 text-center" style="padding-bottom:40px;"> 
+                    <h2 style="font-size:40px;"> Challenge yor  <br> <span style="color:#da1010;"> limits"</span></h2>
+                  </div>
+                  <div>
+                    <div style="padding-bottom: 53px;">
+                    <a href="memberships.html"> <img src="assets/images/button3.png" style="max-width: 250px;"> </a>
+                    </div>
+                </div>
+                <div>
+ 
+            </div>
+            
+            </div>
+            <div class="col-md-6 col-sm-12 mb-4 mb-lg-0 animation animated fadeInLeft" data-animation="fadeInLeft" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">
+            	<div>
+            		<img src="assets/images/about_us.png" alt="about_img6">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+<div class="container-fluid" style="padding-top:30px;"><hr></div>
+    <div class="container">
+        <div class="row  justify-content-center align-items-center" style="padding-top:50px;"> 
+            <div class="col-md-8">
+            	<div class="heading_s3 mb-md-3 text-center" style="padding-bottom:40px;"> 
+                    <h2 style="font-size:51px;font-weight:600;color:#da0a0a;"><span>
+                        <img  src="assets/images/mark.png" alt="logo" style="max-width:98px;"/> Lets fight this</h2>
+                  </div>
+                  <p class="text-center" style="font-size: 20px; color: #383737;font-weight: 600;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                      Nullam ac tortor vitae purus faucibus ornare suspendisse. At lectus urna duis convallis convallis tellus. 
+                      Libero justo laoreet sit amet cursus sit amet dictum sit. Aliquam vestibulum morbi blandit cursus risus. 
+                       Elit eget gravida cum sociis. 
+                      Volutpat blandit aliquam etiam erat velit. Id leo in vitae turpis. Ut ornare lectus sit amet est placerat in egestas.</p>
+            </div>
+            </div>
+        
+    </div>
+    <div class="container-fluid" style="padding-top:68px;">
+        <div class="row justify-content-center" style="background-image: url('assets/images/main_line.png');background-size: cover;/* padding: 5px; */">
+            <div class="col-lg-12 col-md-12 text-center">
+                <h2 style="color:#fff;font-weight: 600;padding:19px;" class="tex-center">MEET OUR TEAM</h2>
+            </div>
+      </div>
+      </div>
+    
+    <div class="container">
+        <div class="row align-items-center" style="padding-top:68px;">
+            <div class="col-md-6 col-sm-12 mb-4 mb-lg-0 animation animated fadeInLeft" data-animation="fadeInLeft" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">
+            	<div>
+            		<img src="assets/images/Team.png" alt="about_img6">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 animation animated fadeInRight" data-animation="fadeInRight" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
+                <div class="heading_s3 mb-md-3 text-center"> 
+                    <h2 style="font-size:50px;padding-bottom:20px;">Stay Motivated!</h2>
+                    <div style="padding-bottom:20px;">
+                    <a href="trainers.html"><img src="assets/images/button2.png" style="max-width:280px;"></a>
+                </div>
+                  </div>
+                 
+                  <p class="text-center" style="font-weight:600;color:#000;"> Our elite team of certified trainers will push your limits and ensure you reach your fitness goals. They will cater to an individual’s specific needs and tailor programs that take your health limitations into consideration because we believe that safety comes first!
+                    . </p>
+                <div>
+              
+            </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="container-fluid" style="padding-top:68px;">
+        <div class="row justify-content-center" style="background-image: url('assets/images/main_line.png');background-size: cover;/* padding: 5px; */">
+            <div class="col-lg-12 col-md-12 text-center">
+                <h2 style="color:#fff;font-weight: 600;padding:19px;" class="tex-center">TESTIMONIALS</h2>
+            </div>
+      </div>
+      </div>
+    
+<div class="container">
+    <div class="row  justify-content-center align-items-center" style="padding-top:50px;"> 
+        <div class="col-md-10">
+    <div class="mySlides">
+       <p class="text-center"> <img src="assets/images/female_icon.png" style="max-width:132px;"></p>
+       <h4 class="text-center" style=" font-size: 30px;font-weight: 600;">Mona bin Kalli</h4>
+       <p class="text-center"> <span><img src="assets/images/star.png" style="max-width:38px;"></span> 
+        <span><img src="assets/images/star.png" style="max-width:38px;"></span>
+        <span><img src="assets/images/star.png" style="max-width:38px;"></span>
+        <span><img src="assets/images/star.png" style="max-width:38px;"></span>
+        <span><img src="assets/images/star.png" style="max-width:38px;"></span>
+    </p>
+      <p style="color: #191818;font-weight: 600;" class="text-center">
+        Exercise has always been a very important part of my life. I train at various boxes,
+        boot-camps & gyms, but Asylum sits at one of my top favorite places to train at.
+        The atmosphere sparks pure positivity, the coaches are very friendly, knowledgeable, and everyone in the classes is such a breeze to train with - Asylum has it all! Simply; the coolest place in RAK right now
+        </p>
+      
+    </div>
+    
+    <div class="mySlides">
+        <p class="text-center"> <img src="assets/images/female_icon.png" style="max-width:132px;"></p>
+        <h4 class="text-center" style=" font-size: 30px;font-weight: 600;">Mona bin Kalli</h4>
+        <p class="text-center"> <span><img src="assets/images/star.png" style="max-width:38px;"></span> 
+         <span><img src="assets/images/star.png" style="max-width:38px;"></span>
+         <span><img src="assets/images/star.png" style="max-width:38px;"></span>
+         <span><img src="assets/images/star.png" style="max-width:38px;"></span>
+         <span><img src="assets/images/star.png" style="max-width:38px;"></span>
+     </p>
+       <p style="color: #191818;font-weight: 600;" class="text-center">In a life packed with challenges, we believe in seeking strength in the deepest dormant parts of ourselves to overcome
+         any obstacle. We believe every person is equipped with what it takes to achieve their ultimate potential; mind and body <br>
+         - that's all you need! 2</p>
+     
+    </div>
+    
+    <div class="mySlides">
+        <p class="text-center"> <img src="assets/images/female_icon.png" style="max-width:132px;"></p>
+        <h4 class="text-center" style=" font-size: 30px;font-weight: 600;">Mona bin Kalli</h4>
+        <p class="text-center"> <span><img src="assets/images/star.png" style="max-width:38px;"></span> 
+         <span><img src="assets/images/star.png" style="max-width:38px;"></span>
+         <span><img src="assets/images/star.png" style="max-width:38px;"></span>
+         <span><img src="assets/images/star.png" style="max-width:38px;"></span>
+         <span><img src="assets/images/star.png" style="max-width:38px;"></span>
+     </p>
+       <p style="color: #191818;font-weight: 600;" class="text-center">In a life packed with challenges, we believe in seeking strength in the deepest dormant parts of ourselves to overcome
+         any obstacle. We believe every person is equipped with what it takes to achieve their ultimate potential; mind and body <br>
+         - that's all you need! 1</p>
+    
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)"><img src="assets/images/left_arrow.png" style="max-width:100px;"></a>
+    <a class="next" onclick="plusSlides(1)"><img src="assets/images/right_arrow.png" style="max-width:100px;"></a>
+    
+    </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="padding-top:68px;">
+    <div class="row justify-content-center" style="background-image: url('assets/images/main_line.png');background-size: cover;/* padding: 5px; */">
+        <div class="col-lg-12 col-md-12 text-center">
+            <h2 style="color:#fff;font-weight: 600;padding:19px;" class="tex-center">TALK TO OUR FITNESS EXPERT</h2>
+        </div>
+  </div>
+  </div>
+    <div class="container">
+    	<div class="row justify-content-center" style="padding-top:68px;">
+            <div class="col-lg-8 col-md-12 text-center" data-animation="fadeInUp">
+                <div class="field_form">
+                    <form method="post">
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <input placeholder="Full Name" id="first-name" class="form-control" name="name" type="text">
+                             </div>
+                            <div class="form-group col-lg-12">
+                                <input placeholder="Email Address" id="email" class="form-control" name="email" type="email">
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <input placeholder="Phone Number" id="phone" class="form-control" name="phone" type="phone">
+                            </div>
+                        
+                            <div class="form-group col-lg-12">
+                                <textarea placeholder="Your Goals" id="description" class="form-control" name="message" rows="4"></textarea>
+                            </div>
+                            <div class="col-lg-12">
+                                <a href="#">
+                              <img src="assets/images/form_button.png" style="max-width:200px;">
+                            </a>
+                            </div>
+                            
+                        </div>
+                    </form>		
+                    </div>
                 
             </div>
         </div>
     </div>
+
+ 
+  
 </section>
-<!-- END 404 SECTION -->
+
+<footer>
+	<div class="top_footer text_white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">
+                    <a class="navbar-brand page-scroll" href="index.html">
+                        <img src="assets/images/asylum_logo.png" style="max-width:300px;">
+                    </a>
+            
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
+                <p>Contact: <a href="tel:+971566077743">+971 56 607 7743 </a></p>
+                <p>Email: <a href="maito: hello@asylum.ae" >hello@asylum.ae
+                </a> </p>
+                <ul class="list_none footer_social">
+                    <li><a href="https://www.facebook.com/AsylumRAK" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                      <li><a href="https://twitter.com/asylum_ae?s=09 "><i class="ion-social-twitter"></i></a></li>
+                      <li><a href=" https://www.linkedin.com/company/asylum-ae"><i class="ion-social-linkedin"></i></a></li>
+                   
+                      <li><a href="https://www.instagram.com/asylum.ae/"><i class="ion-social-instagram-outline"></i></a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
+                    <p>Asylum Fitness House,
+                        Mohamed Abdulkareem Warehouses,
+                        Warehouse #8
+                        Opp. Public Works AI Turfa,
+                        RAK UAE</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 <!-- Latest jQuery --> 
 <script src="assets/js/jquery-1.12.4.min.js"></script> 
-<script>
-
-(function ($) {
-
-    (function ($) {
-        $.fn.serializeFormJSON = function () {
-
-            var o = {};
-            var a = this.serializeArray();
-            $.each(a, function () {
-                if (o[this.name]) {
-                    if (!o[this.name].push) {
-                        o[this.name] = [o[this.name]];
-                    }
-                    o[this.name].push(this.value || '');
-                } else {
-                    o[this.name] = this.value || '';
-                }
-            });
-            return o;
-        };
-    })(jQuery);
-
-        function processForm(e) {
-            
-            console.log( $(this).serializeFormJSON() )
-          $.ajax({
-            url: "http://100.25.194.29/user/login",
-            dataType: "json",
-            type: "post",
-            crossDomain: true,
-            headers: {
-                        "Content-Type": "application/json"
-                    },
-            data: JSON.stringify($(this).serializeFormJSON()),
-            success: function (data, textStatus, jQxhr) {
-                // if success,
-                // store id in localStorage, redirect to dashboard
-                // else pop up error.
-              console.log(typeof(data));
-              console.log(data)
-              if(data === {})
-              {console.log('empty')}
-              console.log(JSON.stringify(data));
-              $("#local").html(JSON.stringify(data) );
-              $("#response pre").html(data);
-              if (typeof(Storage) !== "undefined") {
-                // Code for localStorage/sessionStorage.
-                localStorage.setItem("login", "done");
-                localStorage.setItem("data", JSON.stringify(data));
-                location.href = 'dashboard.html';
-                } else {
-                // Sorry! No Web Storage support..
-                }
-            },
-            error: function (jqXhr, textStatus, errorThrown) {
-              console.log(errorThrown);
-            },
-          });
-
-          e.preventDefault();
-        }
-
-        // once submitted, 
-        // push to API
-        $("#login_form").submit(processForm);
-      })(jQuery);
-    
-</script>
 <!-- jquery-ui --> 
 <script src="assets/js/jquery-ui.js"></script>
-<!-- popper min js --> 
-<script src="assets/js/popper.min.js"></script>
+
 <!-- Latest compiled and minified Bootstrap --> 
 <script src="assets/bootstrap/js/bootstrap.min.js"></script> 
 <!-- owl-carousel min js  --> 
 <script src="assets/owlcarousel/js/owl.carousel.min.js"></script> 
-<!-- magnific-popup min js  --> 
-<script src="assets/js/magnific-popup.min.js"></script> 
-<!-- waypoints min js  --> 
-<script src="assets/js/waypoints.min.js"></script> 
-<!-- parallax js  --> 
-<script src="assets/js/parallax.js"></script> 
-<!-- countdown js  --> 
-<script src="assets/js/jquery.countdown.min.js"></script> 
-<!-- fit video  -->
-<script src="assets/js/jquery.fitvids.js"></script>
-<!-- jquery.counterup.min js --> 
-<script src="assets/js/jquery.counterup.min.js"></script>
-<!-- isotope min js --> 
-<script src="assets/js/isotope.min.js"></script>
-<!-- elevatezoom js -->
-<script src='assets/js/jquery.elevatezoom.js'></script> 
-<!-- scripts js --> 
+
 <script src="assets/js/scripts.js"></script>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+
+
+
 
 </body>
 </html>

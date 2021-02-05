@@ -495,13 +495,13 @@ PAGE JS
 	/*===================================*
 	08. CONTACT FORM JS
 	*===================================*/
-	$("#submitButton0").on("click", function(event) {
+	$("#submitButton").on("click", function(event) {
 	    event.preventDefault();
 	    var mydata = $("form").serialize();
 	    $.ajax({
-	        type: "PUT",
+	        type: "POST",
 	        dataType: "json",
-	        url: "http://100.25.194.29/client",
+	        url: "contact.php",
 	        data: mydata,
 	        success: function(data) {
 	            if (data.type === "error") {
