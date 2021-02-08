@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+  <title>Play/Pause button for HTML5 video using JavaScript</title>
+</head>
+<body> 
+
+<div style="text-align:center"> 
+  <button id="vidbutton">Play</button> 
+  <br><br>
+  <video id="myvid" width="420">
+    <source src="assets/images/Asylum_Lean.mp4" type="video/mp4">
+  </video>
+</div> 
+
+<script> 
+var ppbutton = document.getElementById("vidbutton");
+ppbutton.addEventListener("click", playPause);
+
+myVideo = document.getElementById("myvid");
+function playPause() { 
+    if (myVideo.paused) {
+        myVideo.play();
+        ppbutton.innerHTML = "Pause";
+        }
+    else  {
+        myVideo.pause(); 
+        ppbutton.innerHTML = "Play";
+        }
+} 
+
+</script> 
+
+</body> 
+</html>
