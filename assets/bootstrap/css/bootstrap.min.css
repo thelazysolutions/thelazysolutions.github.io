@@ -1432,7 +1432,7 @@ pre code {
 }
 .form-control::placeholder {
     color:#e63d4c;
-    font-size:30px;
+    font-size:28px;
     font-weight:600;
     opacity: 1;
 }
