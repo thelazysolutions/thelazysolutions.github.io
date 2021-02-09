@@ -13,57 +13,20 @@
 <link rel="stylesheet" href="assets/css/responsive.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
-<style>
 
-
-table {
-  text-align: left;
-  position: relative;
-  border-collapse: separate; 
-  border-spacing: 0px 5px;
-  width:100%;
-
-}
-th, td {
-  padding: 10px;
-  border: 2px solid #bd0a0a;
-}
-tr.red th {
-  background:#bd0a0a;
-  color: white;
-  margin-top:10px;
-}
-tr.green th {
-  background: green;
-  color: white;
-}
-tr.purple th {
-  background: purple;
-  color: white;
-}
-th {
-  background: white;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0; /* Don't forget this, required for the stickiness */
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
-  border:1px solid #ffffffcf;
-  text-align: center;
-}
-</style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-nav" data-offset="110">
 
 <!-- START HEADER -->
-<header class="header_wrap" style="background: #000;">
+<header class="header_wrap1" style="background: #000;">
   <div class="container">
     <nav class="navbar navbar-expand-lg"> 
-    	<a class="navbar-brand page-scroll" href="index.html">
-        	<img src="assets/images/asylum_logo.png">
+      <a class="navbar-brand page-scroll" href="index.html">
+          <img src="assets/images/asylum_logo.png">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="ion-android-menu" style="color:#fff;"></span> </button>
-      	<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li>
                     <a class="nav-link active page-scroll text-white" href="index.html">HOME</a>
@@ -96,154 +59,155 @@ th {
         </div>
       </div>
   </div>
-	<div class="container">
-        <div class="row justify-content-center" style="padding-top:33px;">
-            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-<!-- partial:index.partial.html -->
-<table>
+
+  <div class="container">
+     <div class="row" style="padding-top:33px;">
+       <div class="col-lg-12 col-md-12 col-sm-12">
+
+<table  class="table-responsive-sm table-responsive-md table-responsive-lg">
   <thead>
     <tr class="red">
-		<th><h3 style="color:#fff;text-transform: uppercase;">Validity</h3></th>
-		<th><h3 style="color:#fff;text-transform: uppercase;">Classes</h3></th>
-		<th><h3 style="color:#fff;text-transform: uppercase;">Gym Access</h3></th>
-		<th><h3 style="color:#fff;text-transform: uppercase;">Price(AED)</h3></th>
-	  </tr>
+    <th><h3 style="color:#fff;text-transform: uppercase;">Validity</h3></th>
+    <th><h3 style="color:#fff;text-transform: uppercase;">Classes</h3></th>
+    <th><h3 style="color:#fff;text-transform: uppercase;">Gym Access</h3></th>
+    <th><h3 style="color:#fff;text-transform: uppercase;">Price(AED)</h3></th>
+    </tr>
   </thead>
   <tbody>
-    <tr style=" background-color: #bd0a0a;" class="trainer_display">
-		<td colspan="4" style="border-left: 3px solid  #fff;border-top: 3px solid #fff;border-bottom: thin solid;border-right: 3px solid  #fff;"><h4 style="color:#fff;font-size:28px;text-align: center;">Sampler</h4></td>
-	</tr>
-    <tr>
-		<td><h3>1 Week</h3></td>
-		<td><h3> Unlimited</h3></td>
-		<td><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
-		<td><h3>399</h3></td>
-	</tr>
+    <tr style=" background-color: #bd0a0a;" class="d-table-row">
+    <td class="d-table-cell" colspan="4" style="border-left: 3px solid  #fff;border-top: 3px solid #fff;border-bottom: thin solid;border-right: 3px solid  #fff;"><h4 style="color:#fff;font-size:28px;">Sampler</h4></td>
+  </tr>
+    <tr class="d-table-row">
+    <td ><h3>1 Week</h3></td>
+    <td><h3> Unlimited</h3></td>
+    <td><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
+    <td><h3>399</h3></td>
+  </tr class="d-table-row">
     <tr style=" background-color: #bd0a0a;">
-		<td colspan="4"><h4 style="color:#fff;font-size:28px;text-align: center;">Class Pass</h4></td>
-	</tr>
-    <tr>
-		<td><h3>1 Day</h3></td>
-		<td> <h3>1 Class</h3></td>
-		<td><img src="assets/images/tickmark.png" style="max-width: 28px;"></td>
-		<td><h3>90</h3></td>
-	  </tr>
-	  <tr style=" background-color: #bd0a0a;">
-		<td colspan="4"><h4 style="color:#fff;font-size:28px;text-align: center;">Asylum Standard</h4></td>
-	</tr>
+    <td colspan="4"><h4 style="color:#fff;font-size:28px;">Class Pass</h4></td>
+  </tr>
+    <tr class="d-table-row">
+    <td><h3>1 Day</h3></td>
+    <td> <h3>1 Class</h3></td>
+    <td><img src="assets/images/tickmark.png" style="max-width: 28px;"></td>
+    <td><h3>90</h3></td>
+    </tr>
+    <tr class="d-table-row" style=" background-color: #bd0a0a;">
+    <td colspan="4"><h4 style="color:#fff;font-size:28px;">Asylum Standard</h4></td>
+  </tr>
 
-    <tr>
-                      <td><h3>1 Month</h3></td>
-                      <td> <h3>12 Classes</h3></td>
-                      <td><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
-                      <td><h3>620</h3></td>
-					</tr>
-					 
-                    <tr>
-                        <td><h3>3 Month</h3></td>
-                        <td> <h3>36 Classes</h3></td>
-                        <td><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
-                        <td><h3>1500</h3></td>
+    <tr class="d-table-row">
+                      <td class="d-table-cell"><h3>1 Month</h3></td>
+                      <td class="d-table-cell"> <h3>12 Classes</h3></td>
+                      <td class="d-table-cell"><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
+                      <td class="d-table-cell"><h3>620</h3></td>
+          </tr>
+           
+                    <tr class="d-table-row">
+                        <td class="d-table-cell"><h3>3 Month</h3></td>
+                        <td class="d-table-cell"> <h3>36 Classes</h3></td>
+                        <td class="d-table-cell"><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
+                        <td class="d-table-cell"><h3>1500</h3></td>
                       </tr>
                      
-                      <tr>
-                        <td><h3> 6 Month</h3></td>
-                        <td> <h3> 72 Classes </h3></td>
-                        <td><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
-                        <td><h3>3460</h3></td>
+                      <tr class="d-table-row">
+                        <td class="d-table-cell"><h3> 6 Month</h3></td>
+                        <td class="d-table-cell"> <h3> 72 Classes </h3></td>
+                        <td class="d-table-cell"><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
+                        <td class="d-table-cell"><h3>3460</h3></td>
                       </tr>
                      
-                      <tr>
-                        <td><h3>12 Month</h3></td>
-                        <td> <h3>144 Classes</h3></td>
-                        <td><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
-                        <td><h3>6840</h3></td>
+                      <tr class="d-table-row">
+                        <td class="d-table-cell"><h3>12 Month</h3></td>
+                        <td class="d-table-cell"> <h3>144 Classes</h3></td>
+                        <td class="d-table-cell"><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
+                        <td class="d-table-cell"><h3>6840</h3></td>
                       </tr>
                       
-					  
-					  <tr style=" background-color: #bd0a0a;">
-                        <td colspan="4"><h4 style="color:#fff;font-size:28px;text-align: center;">Asylum Warrior</h4></td>
+            
+            <tr class="d-table-row" style=" background-color: #bd0a0a;">
+                        <td colspan="4"><h4 style="color:#fff;font-size:28px;">Asylum Warrior</h4></td>
                     </tr>
                    
                     <tr>
-                      <td> <h3>1 Month</h3></td>
-                      <td> <h3>Unlimited</h3></td>
-                      <td><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
-                      <td><h3>820</h3></td>
+                      <td class="d-table-cell"> <h3>1 Day</h3></td>
+                      <td class="d-table-cell"> <h3>Unlimited</h3></td>
+                      <td class="d-table-cell"><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
+                      <td class="d-table-cell"><h3>820</h3></td>
                     </tr>
-                    <tr>
-                      <td> <h4>1 Month</h4></td>
-                      <td> <h4>Unlimited</h4></td>
-                      <td><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
-                      <td><h4>820</h4></td>
+                    <tr class="d-table-row">
+                      <td class="d-table-cell"> <h4>1 Month</h4></td>
+                      <td class="d-table-cell"> <h4>Unlimited</h4></td>
+                      <td class="d-table-cell"><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
+                      <td class="d-table-cell"><h4>820</h4></td>
                     </tr>
                    
                    
-                    <tr>
-                        <td><h3>3 Month</h3></td>
-                        <td> <h3>Unlimited</h3></td>
-                        <td><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
-                        <td><h3>2360</h3></td>
+                    <tr class="d-table-row">
+                        <td class="d-table-cell"><h3>3 Month</h3></td>
+                        <td class="d-table-cell"> <h3>Unlimited</h3></td>
+                        <td class="d-table-cell"><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
+                        <td class="d-table-cell"><h3>2360</h3></td>
                       </tr>
                        
                    
 
-                      <tr>
-                        <td><h3>6 Month</h3></td>
-                        <td> <h3>Unlimited</h3></td>
-                        <td><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
-                        <td><h3>4660</h3></td>
+                      <tr class="d-table-row">
+                        <td class="d-table-cell"><h3>6 Month</h3></td>
+                        <td class="d-table-cell"> <h3>Unlimited</h3></td>
+                        <td class="d-table-cell"><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
+                        <td class="d-table-cell"><h3>4660</h3></td>
                       </tr>
                       
-                      <tr>
-                        <td><h3>12 Month</h3></td>
-                        <td> <h3>Unlimited</h3></td>
-                        <td><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
-                        <td><h3>9200</h3></td>
+                      <tr class="d-table-row">
+                        <td class="d-table-cell"><h3>12 Month</h3></td>
+                        <td class="d-table-cell"> <h3>Unlimited</h3></td>
+                        <td class="d-table-cell"><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
+                        <td class="d-table-cell"><h3>9200</h3></td>
                       </tr>
                      
-					  <tr style=" background-color: #bd0a0a;">
-                        <td colspan="5"><h4 style="color:#fff;font-size:28px;text-align: center;">Gym Access Only</h4></td>
+            <tr style=" background-color: #bd0a0a;" class="d-table-row">
+                        <td colspan="5"><h4 style="color:#fff;font-size:28px;">Gym Access Only</h4></td>
                     </tr>
                     
-                    <tr>
-                        <td><h3>1 Day</h3></td>
-                        <td> <h3>Unlimited</h3></td>
-                        <td><img src="assets/images/crossmark.png" style="max-width:19px;"></td>
-                        <td><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
+                    <tr class="d-table-row">
+                        <td class="d-table-cell"><h3>1 Day</h3></td>
+                        <td class="d-table-cell"> <h3>Unlimited</h3></td>
+                        <td class="d-table-cell"><img src="assets/images/crossmark.png" style="max-width:19px;"></td>
+                        <td class="d-table-cell"><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
                         
                       </tr>
                      
-                    <tr>
-                      <td><h3>1 Month</h3></td>
-                      <td> <h3>Unlimited</h3></td>
-                      <td><img src="assets/images/crossmark.png" style="max-width: 19px;"></td>
-                      <td><img src="assets/images/tickmark.png" style="max-width: 28px;"></td>
+                    <tr class="d-table-row">
+                      <td class="d-table-cell"><h3>1 Month</h3></td>
+                      <td class="d-table-cell"> <h3>Unlimited</h3></td>
+                      <td class="d-table-cell"><img src="assets/images/crossmark.png" style="max-width: 19px;"></td>
+                      <td class="d-table-cell"><img src="assets/images/tickmark.png" style="max-width: 28px;"></td>
                      
                     </tr>
                     
                    
-                    <tr>
-                        <td><h3>3 Month</h3></td>
-                        <td> <h3>Unlimited</h3></td>
-                        <td><img src="assets/images/crossmark.png" style="max-width:19px;"></td>
-                        <td><img src="assets/images/tickmark.png" style="max-width: 28px;"></td>
+                    <tr class="d-table-row">
+                        <td class="d-table-cell"><h3>3 Month</h3></td>
+                        <td class="d-table-cell"> <h3>Unlimited</h3></td>
+                        <td class="d-table-cell"><img src="assets/images/crossmark.png" style="max-width:19px;"></td>
+                        <td class="d-table-cell"><img src="assets/images/tickmark.png" style="max-width: 28px;"></td>
                        
                       </tr>
                       
-                      <tr>
-                        <td> <h3>6 Month</h3></td>
-                        <td> <h3>Unlimited</h3></td>
-                        <td><img src="assets/images/crossmark.png" style="max-width:19px;"></td>
-                        <td><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
+                      <tr class="d-table-row">
+                        <td class="d-table-cell"> <h3>6 Month</h3></td>
+                        <td class="d-table-cell"> <h3>Unlimited</h3></td>
+                        <td class="d-table-cell"><img src="assets/images/crossmark.png" style="max-width:19px;"></td>
+                        <td class="d-table-cell"><img src="assets/images/tickmark.png" style="max-width:28px;"></td>
                         
                       </tr>
                       
-                      <tr>
-                        <td> <h3>12 Month</h3></td>
-                        <td> <h3>Unlimited</h3></td>
-                        <td><img src="assets/images/crossmark.png" style="max-width:19px;"></td>
-                        <td><img src="assets/images/tickmark.png" style="max-width: 28px;"></td>
+                      <tr class="d-table-row">
+                        <td class="d-table-cell"> <h3>12 Month</h3></td>
+                        <td class="d-table-cell"> <h3>Unlimited</h3></td>
+                        <td class="d-table-cell"><img src="assets/images/crossmark.png" style="max-width:19px;"></td>
+                        <td class="d-table-cell"><img src="assets/images/tickmark.png" style="max-width: 28px;"></td>
                         
                       </tr>
                       
@@ -253,25 +217,46 @@ th {
 </table>
 <!-- partial -->
  </div>
+
 </div>   
+
+<div class="row">
+   <div class="col-lg-12 col-md-12">
+       <table id="table" style="margin-top:50px;">
+        <tbody><tr style=" background-color: #bd0a0a;">
+            <td colspan="3"><h4 style="color:#fff;font-size:30px;">Personal Training</h4></td>
+        </tr>
+        <tr>
+          <td><h3>1 Section</h3></td>
+          <td> <h3>260</h3></td>
+        </tr>
+        <tr>
+            <td><h3>Pack of 10 Section</h3></td>
+            <td> <h3>2300</h3></td>
+          </tr>
+          <tr>
+            <td><h3>Pack of 15 Section</h3></td>
+            <td> <h3>3150</h3></td>
+          </tr>
+          <tr>
+            <td><h3>Pack of 30 Section</h3></td>
+            <td> <h3>4100</h3></td>
+          </tr>
+      </tbody></table>
+ </div>
 </div>
-       <div class="row justify-content-center">
+<div class="row justify-content-center">
         <div class="col-lg-12 col-md-12 text-center">
-            <h4 style="color: #191818;font-weight: 600;padding-top:68px;">In a life packed with challenges, we believe in seeking strength in the deepest</h4>
+            <h4 style="color: #191818;font-weight: 600;padding-top:68px;">Want to know more about the membership and the latest offer ?</h4>
                               
         </div>
-  </div> 
-
+  </div>
   <div class="row  justify-content-center align-items-center" style="padding-top:40px;">
     <div class="col-md-4 col-sm-6 mb-md-0 mb-3 text-center">
-       <a href="#"> <img src="assets/images/contact_button.png" style="max-width:50%;"> </a>
+       <a href="#"> <img src="assets/images/contact_button.png" style="max-width:200px;"> </a>
         </div>
 </div>
-
 </div>
-
-
-
 </section>
 <footer>
   <div class="top_footer text_white">
@@ -306,9 +291,18 @@ th {
         </div>
     </div>
 </footer>
-<script>
-  
-</script>
+
+<!-- Latest jQuery --> 
+<script src="assets/js/jquery-1.12.4.min.js"></script> 
+<!-- jquery-ui --> 
+<script src="assets/js/jquery-ui.js"></script>
+
+<!-- Latest compiled and minified Bootstrap --> 
+<script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+<!-- owl-carousel min js  --> 
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script> 
+
+<script src="assets/js/scripts.js"></script>
 
 </body>
 </html>

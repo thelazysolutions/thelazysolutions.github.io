@@ -257,7 +257,33 @@ select option {
 .nav-fixed .cart_count {
 	top: 8px;
 }
+.header_wrap1.nav-fixed {
+	box-shadow: 0 0 5px rgba(0,0,0,0.15);
+	position: relative;
+	right: 0;
+	left: 0;
+	top: 0;
+	z-index: 999;
+}
+.header_wrap1.nav-fixed:not([class*="bg_"]):not([class*="bg-"]) {
+	background-color: #fff;
+}
+.nav-fixed.border_bottom_tran {
+	border: 0;
+}
+.header_wrap1.nav-fixed.no-sticky {
+	position: relative;
+}
 
+.header_wrap1.nav-fixed.bg-dark {
+    border-bottom: 0;
+}
+.sticky_light_skin.hover_menu_style2.nav-fixed .navbar-expand-lg .navbar-nav > li > .nav-link::before {
+    background-color: #fff;
+}
+.header_wrap1.nav-fixed[class*="overlay_"]:before {
+	content: normal;
+}
 
 .social_icons, .contact_detail {
 	font-size: 0;
@@ -1574,6 +1600,12 @@ select[multiple] option {
 	{
 		font-size:45px;
 	}
+	.table_display
+	{
+		display: none;
+	}
+
+
 }
 /* Desktop change*/
 @media screen and (min-width: 700px) {
@@ -1596,6 +1628,12 @@ select[multiple] option {
 	.stay_motivated
 	{
 		font-size:45px;
+	}
+	
+	.table_mob
+	{ 
+		display:none;
+		
 	}
 }
 
@@ -1874,34 +1912,31 @@ border-radius: 3px 0 0 3px;
 	  .hvrbox.active .hvrbox-text_mobile {
 		  display: block;
 	  }
-	  #table {
-     
-		border-collapse: collapse;
-		width: 100%;
-	   
-	  }
-	  
-	  #table td, #table th {
-		border: 3px solid #bd0a0a;
-		text-align:center;
-		padding:5px;
-		font-size: 20px;
-		
-		color:#000;
-	  }
-	  
-	 
-	  #table th{
-		  color:#fff;
-		  text-align: center;
-  
-	  }
-	 
-	  #table th {
-		padding-top: 12px;
-		padding-bottom: 12px;
-		text-align: left;
-		background-color: #bd0a0a;
-	   border:1px solid #fff;
-	   text-align: center;
-	  }
+	
+table {
+  text-align: left;
+  position: relative;
+  border-collapse: separate; 
+  border-spacing: 0px 5px;
+  width:100%;
+
+}
+th, td {
+  padding: 10px;
+  border: 2px solid #bd0a0a;
+  text-align: center;
+}
+tr.red th {
+  background:#bd0a0a;
+  color: white;
+  margin-top:10px;
+}
+th {
+  background: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  border:1px solid #ffffffcf;
+}
+
