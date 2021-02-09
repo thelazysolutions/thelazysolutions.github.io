@@ -74,7 +74,7 @@
 
                 </div>
             </div>
-           <div class="carousel-item overlay_bg2 background_bg"  style="background: url('assets/images/slider3.jpg')center center / cover;">
+           <div class="carousel-item overlay_bg2 background_bg"  style="background: url('assets/images/slider2.jpg')center center / cover;">
                 <div class="banner_slide_content">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -90,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item background_bg overlay_bg2" style="background: url('assets/images/slider1.jpg')center center / cover;">
+            <div class="carousel-item background_bg overlay_bg2" style="background: url('assets/images/slider4.jpg')center center / cover;">
                 <div class="banner_slide_content">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -202,29 +202,6 @@
       
 
 
-        <script type="text/javascript">  
-            var slide_index = 1;  
-            displaySlides(slide_index);  
-      
-            function nextSlide(n) {  
-                displaySlides(slide_index += n);  
-            }  
-      
-            function currentSlide(n) {  
-                displaySlides(slide_index = n);  
-            }  
-      
-            function displaySlides(n) {  
-                var i;  
-                var slides = document.getElementsByClassName("showSlide");  
-                if (n > slides.length) { slide_index = 1 }  
-                if (n < 1) { slide_index = slides.length }  
-                for (i = 0; i < slides.length; i++) {  
-                    slides[i].style.display = "none";  
-                }  
-                slides[slide_index - 1].style.display = "block";  
-            }  
-        </script> 
 
         <div class="container slider_display_mob ">
             <div class="row mb-md-5 mb-3">
@@ -673,6 +650,30 @@
 <script src="assets/owlcarousel/js/owl.carousel.min.js"></script> 
 
 <script src="assets/js/scripts.js"></script>
+
+<script type="text/javascript">  
+    var slide_index = 1;  
+    displaySlides(slide_index);  
+
+    function nextSlide(n) {  
+        displaySlides(slide_index += n);  
+    }  
+
+    function currentSlide(n) {  
+        displaySlides(slide_index = n);  
+    }  
+
+    function displaySlides(n) {  
+        var i;  
+        var slides = document.getElementsByClassName("showSlide");  
+        if (n > slides.length) { slide_index = 1 }  
+        if (n < 1) { slide_index = slides.length }  
+        for (i = 0; i < slides.length; i++) {  
+            slides[i].style.display = "none";  
+        }  
+        slides[slide_index - 1].style.display = "block";  
+    }  
+</script> 
 
 <script>
     var slideIndex = 1;
