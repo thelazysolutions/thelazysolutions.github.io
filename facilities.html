@@ -72,7 +72,8 @@
             
                   <source src="assets/images/Asylum_Lean.mp4" type="video/mp4">
                 </video>
-                <img class="bounce_img video_popup video_play display_size img-responsive" style="cursor: pointer;" src="assets/images/play-icon.png" alt="play-icon" id="vidbutton">
+              <span class="video_play" style='font-size:80px;color:#fff;' id="vidbutton">&#x2023;</span>
+                <!--<img class="bounce_img video_popup video_play display_size img-responsive" style="cursor: pointer;" src="assets/images/play-icon.png" alt="play-icon" id="vidbutton">-->
                 </div>
 
                  <!---- <video loop="" muted="" autoplay=""  poster="assets/images/slider3.jpg" class=" video_play" width="100%" style="position: relative;">
@@ -257,11 +258,11 @@
     function playPause() { 
         if (myVideo.paused) {
             myVideo.play();
-            ppbutton.innerHTML = "Pause";
+            ppbutton.innerHTML = "&#10073 &#10073;";
             }
         else  {
             myVideo.pause(); 
-            ppbutton.innerHTML = "Play";
+            ppbutton.innerHTML = "&#x2023;";
             }
     } 
     
