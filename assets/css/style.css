@@ -72,7 +72,7 @@ textarea:focus {
 	box-shadow:  none !important;
 }
 section {
-	padding: 50px 0;
+	padding: 100px 0;
 	position:relative;
 }
 
@@ -1665,7 +1665,6 @@ select[multiple] option {
 }
 
 #customers {
-	font-family: Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
 	width: 100%;
   }
@@ -1674,11 +1673,20 @@ select[multiple] option {
 	border: 3px solid #000000c4;
 	padding: 8px;
 	font-weight:600;
-   
   }
  .table_td
  {
-  color: #000;font-weight: 600; font-size:20px;
+  color: #000;
+  font-weight: 600; 
+
+  font-family: 'Helvetica-Condensed';
+ }
+ .table_td1
+ {
+  color: #fff;
+  font-weight: 600; 
+
+  font-family: 'Helvetica-Condensed';
  }
  .table_tr
  {
