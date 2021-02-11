@@ -1673,6 +1673,7 @@ select[multiple] option {
   #customers td, #customers th {
 	border: 3px solid #000000c4;
 	padding: 8px;
+	font-weight:600;
    
   }
  .table_td
