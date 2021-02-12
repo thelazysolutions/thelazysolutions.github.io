@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar-nav" data-offset="110">
@@ -87,18 +88,16 @@
 </div>
 </section>
 
-
-
 <section style="background: url('assets/images/Background.jpg')center center / cover;">
 	<div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-12 trainer_display">
-                <img src="assets/images/left_arrow.png" style="max-width:124px;" class="left carousel_slide1 owl-carousel owl-theme"> 
-                <img src="assets/images/right_arrow.png" style="max-width:124px;" class="right carousel_slide1 owl-carousel owl-theme">
+            <div class="col-md-12 facility_display">                
+                <img src="assets/images/left_arrow.png" style="max-width:124px;padding:20px;" class="left carousel_slide1 owl-carousel owl-theme"> 
+                <img src="assets/images/right_arrow.png" style="max-width:124px;padding:20px;" class="right carousel_slide1 owl-carousel owl-theme">
             </div>
         	<div class="col-md-12 col-sm-6 text-center">
                 
-                <div class="testimonial_slider testimonial_style3 carousel_slide3 owl-carousel owl-theme" data-autoheight="true" data-loop="true" data-autoplay="true">
+                <div class="owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true" data-dots="false" data-autoplay-timeout="2000">
                     <div class="item">
                         <img class="m-auto" src="assets/images/all_in_one.png" style="max-width:100px;" alt="user"/>
                     <div class="icon_box_content">
@@ -152,6 +151,30 @@
     </div><!--container-->
     
  
+        <script type="text/javascript">  
+            var slide_index = 1;  
+            displaySlides(slide_index);  
+      
+            function nextSlide(n) {  
+                displaySlides(slide_index += n);  
+            }  
+      
+            function currentSlide(n) {  
+                displaySlides(slide_index = n);  
+            }  
+      
+            function displaySlides(n) {  
+                var i;  
+                var slides = document.getElementsByClassName("showSlide");  
+                if (n > slides.length) { slide_index = 1 }  
+                if (n < 1) { slide_index = slides.length }  
+                for (i = 0; i < slides.length; i++) {  
+                    slides[i].style.display = "none";  
+                }  
+                slides[slide_index - 1].style.display = "block";  
+            }  
+        </script> 
+
     <div class="container" style="padding-top:68px;">
         <div class="row justify-content-center" style="background-image: url('assets/images/main_line.png');background-size: cover;/* padding: 5px; */">
             <div class="col-lg-12 col-md-12 text-center">
@@ -492,10 +515,6 @@
       dots[slideIndex-1].className += " active";
     }
     </script>
-
-
-
-
 
 </body>
 </html>
