@@ -236,7 +236,7 @@ select option {
 	z-index: 999;
 }
 .header_wrap.nav-fixed:not([class*="bg_"]):not([class*="bg-"]) {
-	background-color: #fff;
+	background-color: none;
 }
 .nav-fixed.border_bottom_tran {
 	border: 0;
