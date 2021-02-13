@@ -1341,7 +1341,7 @@ pre code {
         border: 0;
     }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
     .table-responsive-md {
         display: block;
         width: 100%;
@@ -1352,7 +1352,7 @@ pre code {
         border: 0;
     }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 575.98px) {
     .table-responsive-lg {
         display: block;
         width: 100%;
