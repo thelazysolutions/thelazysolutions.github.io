@@ -1940,7 +1940,19 @@ tr.red th {
   color: white;
   margin-top:10px;
 }
-th {
+
+td.head
+{
+	 background:#bd0a0a;;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  border:1px solid #ffffffcf;
+
+}
+
+td .redd {
   background: white;
   position: -webkit-sticky;
   position: sticky;
