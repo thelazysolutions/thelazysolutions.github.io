@@ -1943,7 +1943,7 @@ tr.red th {
 
 td.head
 {
-	 background:#bd0a0a;;
+	 background:#000000;
   position: -webkit-sticky;
   position: sticky;
   top: 0; /* Don't forget this, required for the stickiness */
