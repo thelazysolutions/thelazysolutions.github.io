@@ -34,7 +34,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 p {
 	color:#888888;
-	font-family: 'Helvetica-Condensed', sans-serif;
+	font-family: 'Helvetica-Condensed';
+	font-size: 17px;
 }
 a {
 	color: #292b2c;
