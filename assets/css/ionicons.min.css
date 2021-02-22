@@ -189,6 +189,8 @@
 .ion-wifi:before,
 .ion-wineglass:before,
 .ion-woman:before,
+.ion-ios-arrow-forward:before,
+.ion-ios-arrow-back:before,
 .ion-wrench:before,
 .ion-xbox:before {
     display: inline-block;
@@ -219,4 +221,10 @@
 }
 .ion-android-menu:before {
     content: "\f394";
+}
+.ion-ios-arrow-back:before {
+    content: "\f3cf";
+}
+.ion-ios-arrow-forward:before {
+    content: "\f3d1";
 }
