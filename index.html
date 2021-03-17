@@ -18,6 +18,26 @@
 <link rel="stylesheet" href="owlcarousel/css/owl.theme.default.min">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
+<style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 170px;
+      box-shadow:1px 0px 4px 3px rgb(0 0 0 / 20%);
+      padding: 12px 16px;
+      z-index: 1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-nav" data-offset="110">
@@ -37,9 +57,14 @@
                 <li>
                     <a class="nav-link page-scroll" href="about-us.html">About Us</a>
                 </li>
-                <li>
-                    <a class="nav-link page-scroll" href="services.html">Services</a>
-                </li>
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" aria-expanded="false">Services</a>
+                    <div class="dropdown-content text-center" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="portuguese_citizenship.html" style="text-transform: uppercase;">Portuguese Citizenship</a>
+                       <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="services.html"  style="text-transform: uppercase;">Other services</a>
+                    </div>
+                 </li>
                 <li>
                     <a class="nav-link page-scroll" href="contact-us.html">contact Us</a>
                 </li>
@@ -270,8 +295,8 @@
                 <footer style="background: #1a3652;padding:50px 0px;">
                     <div class="top_footer text_white">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0 text-center">
                                     <div class="footer_logo">
                                         <a href="index.html"> <img  src="images/logo1.png" alt="logo" style="max-width:150px;"/></a>
                                     </div>
