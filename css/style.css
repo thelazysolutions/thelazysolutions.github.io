@@ -2307,21 +2307,11 @@ header.light_skin.nav-fixed .social_icons li a:hover {
 	max-width: 60px;
 }
 
-/*===================================*
-  05. END ICON BOX CSS
-*===================================*/
-
-
-
-
-/*===================================*
-  08. TESTIMONIAL SECTION
-*===================================*/
 .testimonial_img {
 	margin-bottom: 15px;
 }
 .testimonial_img img {
-    max-width: 80px;
+    max-width: 90px;
 }
 .testi_meta p {
     margin-bottom: 0;
@@ -2376,6 +2366,14 @@ header.light_skin.nav-fixed .social_icons li a:hover {
 .owl-theme .owl-nav {
     margin-top: 0;
 }
+.owl-theme1 .owl-nav .owl-prev {
+	left: -10px;
+	border-radius: 17px;
+}
+.owl-theme .owl-nav .owl-next {
+	right: -10px;
+	border-radius: 17px;
+}
 .owl-theme .owl-nav .owl-prev {
 	left: -10px;
 	border-radius: 17px;
@@ -2389,7 +2387,7 @@ header.light_skin.nav-fixed .social_icons li a:hover {
 	left: auto;
 }
 .owl-theme.nav_top .owl-nav [class*="owl-"] {
-	top: -64px;
+	top: -5px;
 	-moz-transform: none;
 	-webkittransform: none;
 	transform: none;
@@ -4161,3 +4159,4 @@ select[multiple] option {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
