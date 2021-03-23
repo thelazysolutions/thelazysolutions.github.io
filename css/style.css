@@ -4159,4 +4159,42 @@ select[multiple] option {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 992px) {
+	.desktop_display
+	{
+		display:none;
+	}
+    .pos_display
+	{
+		position: relative;
+	    top:10px;
+	}
+	.footer_display
+	{
+		
+		  position: relative;
+		  left:20px;
+	}
+	
+}
+@media screen and (min-width: 992px) {
+	.mob_display
+	{
+		display:none;
+	}
+	.pos_display
+{
+	position: relative;
+	top:100px;
+}
+.footer_display
+	{
+		
+		  position: relative;
+		  left:0px;
+	}
+
+}
+
+
 
