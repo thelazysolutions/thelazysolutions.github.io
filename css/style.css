@@ -4187,6 +4187,11 @@ select[multiple] option {
 		left: -5px;
 		border-radius: 30px;
 	}
+	.screen_h1
+	{
+		height:95vh;
+	}
+
 }
 @media screen and (min-width: 992px) {
 	.mob_display
@@ -4207,6 +4212,10 @@ select[multiple] option {
 	.screen_h
 	{
 		height:80vh;
+	}
+	.screen_h1
+	{
+		height:107vh;
 	}
 
 }
