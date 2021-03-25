@@ -2332,7 +2332,7 @@ header.light_skin.nav-fixed .social_icons li a:hover {
     background: #fff;
     border-radius: 0;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	-moz-transform: translateY(-50%);
 	-webkittransform: translateY(-50%);
 	transform: translateY(-50%);
@@ -2367,20 +2367,20 @@ header.light_skin.nav-fixed .social_icons li a:hover {
     margin-top: 0;
 }
 .owl-theme1 .owl-nav .owl-prev {
-	left: -10px;
+	left: -28px;
 	border-radius: 17px;
 }
 .owl-theme .owl-nav .owl-next {
-	right: -10px;
+	right: -28px;
 	border-radius: 17px;
 }
 .owl-theme .owl-nav .owl-prev {
-	left: -10px;
-	border-radius: 17px;
+	left: -28px;
+	border-radius: 30px;
 }
 .owl-theme .owl-nav .owl-next {
-	right: -10px;
-	border-radius: 17px;
+	right: -28px;
+	border-radius: 30px;
 }
 .owl-theme.nav_top .owl-nav .owl-prev {
 	right: 50px;
