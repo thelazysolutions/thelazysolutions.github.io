@@ -4179,7 +4179,14 @@ select[multiple] option {
 	{
 		height:60vh;
 	}
-	
+	.owl-theme .owl-nav .owl-next {
+		right: -5px;
+		border-radius: 30px;
+	}
+	.owl-theme .owl-nav .owl-prev {
+		left: -5px;
+		border-radius: 30px;
+	}
 }
 @media screen and (min-width: 992px) {
 	.mob_display
