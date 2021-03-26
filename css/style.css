@@ -4166,7 +4166,7 @@ select[multiple] option {
     .pos_display
 	{
 		position: relative;
-	    top:0;
+	    top:10px;
 	}
 	.footer_display
 	{
@@ -4190,6 +4190,14 @@ select[multiple] option {
 	{
 		height:95vh;
 	}
+	.heading
+{
+	font-weight:700;
+	padding-bottom:22px;
+	border-bottom: 4px solid #286ce8;
+	text-transform: uppercase;
+	font-size:25px;
+}
 
 }
 @media screen and (min-width: 992px) {
@@ -4200,7 +4208,14 @@ select[multiple] option {
 	.pos_display
 {
 	position: relative;
-	top:100px;
+	top:90px;
+}
+.heading
+{
+	font-weight:700;
+	padding-bottom:22px;
+	border-bottom: 4px solid #286ce8;
+	text-transform: uppercase;
 }
 .footer_display
 	{
@@ -4218,7 +4233,6 @@ select[multiple] option {
 	}
 
 }
-
 
 
 
