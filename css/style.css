@@ -4199,6 +4199,14 @@ select[multiple] option {
 	text-transform: uppercase;
 	font-size:30px;
 }
+.heading1
+{
+	font-weight:700;
+	padding-bottom:22px;
+	border-bottom: 4px solid #286ce8;
+	text-transform: uppercase;
+	font-size:22px;
+}
 
 }
 @media screen and (min-width: 992px) {
@@ -4212,6 +4220,13 @@ select[multiple] option {
 	top:90px;
 }
 .heading
+{
+	font-weight:700;
+	padding-bottom:22px;
+	border-bottom: 4px solid #286ce8;
+	text-transform: uppercase;
+}
+.heading1
 {
 	font-weight:700;
 	padding-bottom:22px;
