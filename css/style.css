@@ -2331,7 +2331,7 @@ header.light_skin.nav-fixed .social_icons li a:hover {
     background: #fff;
     border-radius: 0;
 	position: absolute;
-	top: 40%;
+	top: 46%;
 	-moz-transform: translateY(-50%);
 	-webkittransform: translateY(-50%);
 	transform: translateY(-50%);
@@ -3079,6 +3079,7 @@ footer .widget_title {
     -moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
+	color:#cccbcb;
 }
 .custome_select::before {
     content: "";
